@@ -14,7 +14,7 @@ RUN chmod a+x /netcert.sh
 ENV CodeMeter_Server 192.168.86.8
 
 RUN echo $(date "+%Y-%m-%d_%H:%M:%S") >> /.image_time
-RUN echo "land007/python" >> /.image_name
+RUN echo "land007/debian-codemeter" >> /.image_name
 
 #CMD /netcert.sh; /etc/init.d/ssh start; bash
 RUN echo "/netcert.sh" >> /start.sh
